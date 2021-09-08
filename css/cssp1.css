@@ -202,30 +202,18 @@ h4{
   border-radius: 4px;
 }
 /* CONTENT */
-.content{
+.content_planets{
   margin-top: 100px;
-}
-.content hr{
-  margin: 0;
-  color: #101113;
-}
-.planets_main{
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  padding: 0;
 }
 /* SELECT_planets */
 .select_option h2{
   color: #2fa4e7;
-  text-align: center;
 }
 .select_option select{
  width: 200px;
  color: #0f84c7;
  font-size: 14px;
 }
-
 .wrap{
   margin: auto;
 }
@@ -235,7 +223,6 @@ h4{
   display: none;
   margin-top: 20px;
 }
-
 .inner{
   margin-top: 2px;
   padding: 0;
@@ -253,8 +240,6 @@ h4{
   
 }
 .solar_system{
-  max-width: 800px;
-  max-height: 800px;
   margin-top: 20px;
 }
 .planets_item{
@@ -262,10 +247,12 @@ h4{
   display: block;
   position: relative;
   margin-bottom: 40px;
+  border: 1px solid #2fa4e7;
+}
+.body_item{
+  padding: 5px 10px;
 }
 .name_item{
-  padding-left: 12px;
-  padding-top: 5px;
   font-weight: 500;
   font-size: 25px;
 }
@@ -273,8 +260,6 @@ h4{
   position: absolute;
   bottom: 0;
   margin-bottom: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
   font-size: 11px;
   color: #fff;
 }
@@ -325,12 +310,9 @@ h4{
 
 /* END SELECT_planets */
 
-.planets_content{
-  color: aliceblue;
-  background-color: #101113;
-  max-width: 850px;
-  margin-left: 60px;
-  position: relative; 
+.planets_about{
+  position: relative;
+  color: #fff;
 }
 .name_planets{
   background-color: #073cce;
@@ -338,36 +320,30 @@ h4{
   text-align: center;
   padding: 0 5px;
   position: absolute;
-  top: -15px;
-  left: -15px;
+  top: 0px;
+  left: 0px;
   font-size: 30px;
   font-weight: 500;
 } 
-.banner_planets{
-  display: block;
-  max-width: 1000px;
-  width: auto;
-}
-.planets_about{
+.planets_facts{
   font-size: 14px;
   margin-right: 0;
   overflow-y: scroll;
   overflow-x: hidden;
-  max-height: 950px;
   padding-bottom: 20px;
+  background-color:  #101113;
+  max-height: 1000px;
 }
-.planets_about-summary{
+.summaryBg{
+  background: url(../images/mecury/mercury-v2\ -\ Copy.jpg)no-repeat center / cover;
+  min-height: 400px
+}
+.facts1{
   display: flex;
   flex-direction: row;
-  min-height: 400px;
+  padding: 5px;
 }
-.planets_about-summary p{
-  margin-top: 10px;
-  margin-left: 5px;
-  padding-right: 10px;
-  max-width: 550px;
-}
-.planets_about-summary p:first-child::first-letter{
+.facts1 p:first-child::first-letter{
   float: left;
   font-size: 50px;
   initial-letter: 2;
@@ -376,8 +352,7 @@ h4{
   color: #2fa4e7;
 }
 .widget{
-  margin-top: 10px;
-  margin-right: 5px;
+ padding: 0 10px 0 15px;
 }
 .widget_header{
   border-left: 6px #2fa4e7 solid;
@@ -398,18 +373,15 @@ h4{
   padding: 5px;
   vertical-align: top;
 }
-.summaryBg{
-  background: url(../images/mecury/mercury-v2\ -\ Copy.jpg)no-repeat center / cover;;
-}
-.facts{
+.facts2{
   display: flex;
   flex-direction: row;
   padding-top: 20px;
 }
-.facts_list{
+.facts2_list{
   padding-right: 5px;
 }
-.facts_list h4{
+.facts2_list h4{
   border-left: 6px #2fa4e7 solid;
   padding-left: 10px;
   margin-left: 15px;
@@ -442,25 +414,24 @@ h4{
   margin: 20px 40px 10px;
   background-image: linear-gradient(to right, #423d3d, #f0f0f0,#41d9c0, #00b9ff,#0c39b4,#00b9ff, #41d9c0, #f0f0f0,#423d3d);
 }
-.facts2{
- margin: 10px 5px;
+.facts3{
+ margin: 10px 15px;
 } 
-.facts2_item{
+.facts3_item{
   display: flex;
   flex-direction: row;
 }
-.facts2_item img{
+.facts3_item img{
   width: 25%;
 }
-.facst2_text{
+.facst3_text{
   margin: 10px 100px 0 30px ;
 }
-.facst2_text h4{
+.facst3_text h4{
   border-left: 6px #2fa4e7 solid;
   padding-left: 10px;
 }
-
-.title-line h3 {
+.title-line h2{
   position: relative;
   display: inline;
   padding: 0 1rem;
@@ -469,26 +440,35 @@ h4{
   color: #14a5d3;
   margin-left: 2rem;
 }
-.facts3_item p{
+.title-line h3{
+  position: relative;
+  display: inline;
+  padding: 0 1rem;
+  z-index: 5;
+  background-color: #101113;
+  color: #14a5d3;
+  margin-left: 2rem;
+}
+.facts4_item p{
   margin: 5px 15px;
 }
-.facts3_item img{
+.facts4_item img{
   width: 600px;
   margin: auto;
   width: 50%;
   margin-left: 25%;
 }
-.facts4 p{
+.facts5 p{
   padding: 10px 30px 0 20px;
 }
-.facts4 img{
+.facts5 img{
   width: 250px;
   margin-right: 20px;
 }
-.facts4 ul{
+.facts5 ul{
   list-style: none;
 }
-.facts4 li{
+.facts5 li{
   padding: 15px 20px 0 0;
 }
 ::-webkit-scrollbar{
@@ -498,188 +478,254 @@ h4{
   background-color: #4686aa;
   border-radius: 10px;
 }
+@media screen and (max-width: 767.98px){
+  .select_option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .inner,.outer,.other{
+    max-width: 100%;
+  }
+  .solar_system{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5px;
+    justify-content: space-between;
+ }
+ .planets_about{
+   width: 100%;
+   padding: 0;
+   margin-top: 10px;
+ }
+ .name_planets{
+   display: none;
+ }
+ .facts3_item img{
+  height: 155px;
+  margin-top: 20px;
+}
+.planets_item{
+  width: 130px;
+  max-height: 130px ;
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+.text_item{
+  display: none;
+}
+.Bg1{
+  background: url(../images/mercury.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;
+}
+.Bg2{
+  background: url(../images/venus.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;
+}  
+.Bg3{
+  background: url(../images/earth.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;
+}
+.Bg4{
+  background: url(../images/mars.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;
+}
+.Bg5{
+  background: url(../images/jupiter.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;
+}
+.Bg6{
+  background: url(../images/saturn.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;
+}
+.Bg7{
+  background: url(../images/uranus.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;;
+}
+.Bg8{
+  background: url(../images/neptune.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;
+}
+.Bg9{
+  background: url(../images/pluto.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;
+}
+.Bg10{
+  background: url(../images/eris.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;
+}
+.Bg11{
+  background: url(../images/orcus.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;
+}
+}
+
+@media screen and (min-width: 767.98px)and (max-width:991px){
+  .select_option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .inner,.outer,.other{
+    max-width: 100%;
+  }
+  .solar_system{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5px;
+    justify-content: space-between;
+ }
+ .planets_about{
+  width: 100%;
+  padding: 0;
+  padding-top: 20px;
+}
+.name_planets{
+  display: none;
+}
+ .facts3_item img{
+  height: 155px;
+  margin-top: 20px;
+  
+}
+.planets_item{
+  width: 130px;
+  max-height: 130px ;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+.text_item{
+  display: none;
+}
+.Bg1{
+  background: url(../images/mercury.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;
+}
+.Bg2{
+  background: url(../images/venus.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;
+}  
+.Bg3{
+  background: url(../images/earth.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;
+}
+.Bg4{
+  background: url(../images/mars.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;
+}
+.Bg5{
+  background: url(../images/jupiter.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;
+}
+.Bg6{
+  background: url(../images/saturn.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;
+}
+.Bg7{
+  background: url(../images/uranus.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;;
+}
+.Bg8{
+  background: url(../images/neptune.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;
+}
+.Bg9{
+  background: url(../images/pluto.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;
+}
+.Bg10{
+  background: url(../images/eris.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;
+}
+.Bg11{
+  background: url(../images/orcus.jpg)no-repeat center / cover;
+  width: 128px;
+  height: 127px;
+}
+} 
+
 
 /* END CONTENT */
 
 /* CONTACT */
 .contact {
-  padding-left: 20px;
   color: #ffffff;
   font-style: italic;
 }
-.hr{
+.hr_icon1{
   display: flex;
-  flex-direction: row;
-  margin-top: 15px;
+  margin-top: 5px;
+  justify-content: space-between;
 }
-.hr img{
-  margin: 0 50px;
-}
-.contact_comment input{
- width: 830px;
- height: 100px;
- margin-left: 7px;
- border-radius: 10px;
-}
-.contact_nameEmail{
+.hr_icon2{
   display: flex;
-  max-width: 830px;
-  padding-top: 4px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
-.contact_nameEmail input{
-  flex: 1;
-  margin-left: 12px;
-  border-radius: 5px;
+.contact img{
+  margin: 5px 0;
 }
+.contact_comment{
+  margin: 0 22% 15px 10px;
+}
+.contact_comment label{
+  color: #2fa4e7 ;
+  font-size: 18px;
+  margin-left: -10px;
+  margin-bottom: 3px;
+}
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+input[type=submit]{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #002fff;
+}
+
+@media screen and (max-width: 767.98px){
+  .contact_comment{
+    margin: 10px;
+  }
+}  
 
 /* END CONTACT */
 
-/* QUOTATIONS */
-.quote-outer {
-  background-image: url(../images/bg-login.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  padding-top: 5rem;
-  box-shadow: inset 0px 15px 15px -10px rgba(0, 162, 255, 0.5),
-    inset 0px -15px 15px -10px rgba(0, 162, 255, 0.5);
-}
-.quotations {
-  color: white;
-  overflow: hidden;
-  height: 140px;
-}
-.blockquote-footer {
-  color: lightgray;
-}
-.blockquote.active {
-  display: block;
-  animation: zoom-quote 2s ease forwards;
-}
-@keyframes zoom-quote {
-  from {
-    width: 70%;
-    opacity: 0;
-  }
-  to {
-    width: 100%;
-    opacity: 1;
-  }
-}
-/* CONTENT CARDS */
-.content-cards {
-  background: url(../images/red-earth-bg.jpg) no-repeat center / cover;
-  background-attachment: fixed;
-  padding: 2rem 0;
-  overflow: hidden;
-}
-.content-cards .btn:hover {
-  color: #fcbf1e;
-  transform: scale(0.9);
-}
-.card-icon .icon {
-  font-size: 2.5rem;
-  border-bottom: 3px solid #14a5d3;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
-  color: #14a5d3;
-}
-.card-color .card-title {
-  color: #2fa4e7;
-}
-.card-icon .fa-sun {
-  color: #fcbf1e;
-}
-.card-icon .fa-globe-americas {
-  color: #06cc0f;
-}
-.card-icon .fa-star-and-crescent {
-  color: #d18904;
-}
-.content-card-title {
-  margin: 1rem 0;
-}
-.content-card-text {
-  margin: 2rem 0;
-}
-
-/*Animation content card*/
-.content-cards .solar-card,
-.content-cards .planet-card,
-.content-cards .constell-card,
-.content-cards .obser-card {
-  opacity: 0;
-}
-.content-cards .solar-card.show {
-  animation: fade-left 0.6s ease forwards;
-}
-@keyframes fade-left {
-  0% {
-    opacity: 0;
-    transform: translateX(-200px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-.content-cards .planet-card.show {
-  animation: fade-top 0.6s ease forwards;
-  animation-delay: 0.4s;
-}
-@keyframes fade-top {
-  0% {
-    opacity: 0;
-    transform: translateY(-200px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.content-cards .constell-card.show {
-  animation: fade-bottom 0.6s ease forwards;
-  animation-delay: 0.8s;
-}
-@keyframes fade-bottom {
-  0% {
-    opacity: 0;
-    transform: translateY(200px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.content-cards .obser-card.show {
-  animation: fade-right 0.6s ease forwards;
-  animation-delay: 1.2s;
-}
-@keyframes fade-right {
-  0% {
-    opacity: 0;
-    transform: translateX(200px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.card-color {
-  background-color: rgb(33, 48, 70, 0.2);
-  color: white;
-  backdrop-filter: blur(15px) !important;
-  box-shadow: inset 0px 15px 15px -10px rgba(0, 162, 255, 0.5),
-    inset 15px 0 15px -10px rgba(0, 162, 255, 0.5),
-    inset -15px 0 15px -10px rgba(0, 162, 255, 0.5),
-    inset 0px -15px 15px -10px rgba(0, 162, 255, 0.5);
-}
-/* PLANETS */
-.plannets {
-  overflow: hidden;
-}
 .title-line {
   position: relative;
 }
@@ -692,25 +738,15 @@ h4{
   top: 50%;
   left: 0;
 }
-.title-line h1 {
+.title-line h2 {
   position: relative;
   display: inline;
   padding: 0 1rem;
   z-index: 5;
-  background-color: #101113;
+  background-color: #000000;
   color: #14a5d3;
   margin-left: 2rem;
 }
-.planets {
-  background-color: #101113;
-  padding: 3rem 0;
-  color: white;
-}
-.planets h1 {
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
-}
-
 .card-glass {
   background-color: rgba(52, 41, 75, 0.2);
   color: white;
@@ -771,37 +807,7 @@ h4{
     margin-bottom: 1rem;
   }
 }
-/* Astronomy news animation */
-.astronomy-news .card-left,
-.astronomy-news .card-right-top,
-.astronomy-news .card-right-bt-left,
-.astronomy-news .card-right-bt-right {
-  opacity: 0;
-}
-.astronomy-news .card-left.show {
-  opacity: 1;
-  animation: scale-news 1s ease forwards;
-}
-.astronomy-news .card-right-top.show {
-  opacity: 1;
-  animation: scale-news 1s ease forwards;
-}
-.astronomy-news .card-right-bt-left.show {
-  opacity: 1;
-  animation: scale-news 1s ease forwards;
-}
-.astronomy-news .card-right-bt-right.show {
-  opacity: 1;
-  animation: scale-news 1s ease forwards;
-}
-@keyframes scale-news {
-  0% {
-    transform: scale(0.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+
 /* FOOTER */
 #footer {
   background: url(../images/footer.jpg) no-repeat center / cover;
